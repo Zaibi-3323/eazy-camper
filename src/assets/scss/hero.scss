@@ -1,0 +1,84 @@
+.heroSection {
+  margin-bottom: 90px;
+}
+.bg_image {
+  background-image: url("../images/heroImg.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  .heroContent {
+    background: #ffffff;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+    max-width: 741px;
+    width: 100%;
+    height: auto;
+    padding: 96px 156px 30px 64px;
+    position: absolute;
+    bottom: -200px;
+  }
+  .headerImage2 {
+    float: right;
+  }
+  .headerImage {
+    margin-top: 40px;
+  }
+  h2 {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 49px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 29px;
+    font-family: "Montserrat", sans-serif;
+  }
+  span {
+    color: #f78065;
+  }
+}
+.heroButton {
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px 12px 16px;
+  width: 250px;
+  height: 65px;
+  background: #f78065;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-color: #f78065;
+  margin-top: 29px;
+  outline: none;
+}
+@media (max-width: 992px) {
+  .bg_image .heroContent {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bg_image .heroContent {
+    position: relative;
+    padding: 40px 20px 40px 20px;
+    text-align: center;
+    margin-top: 200px;
+  }
+}
+@media (max-width: 512px) {
+  .bg_image .heroContent {
+    min-height: 600px;
+  }
+  .SoftwareCompnie {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 427px) {
+  .bg_image .heroContent {
+    min-height: 700px;
+  }
+}

@@ -1,0 +1,45 @@
+.page-footer {
+  padding-top: 300px;
+  @media (max-width: 767px) {
+    text-align: center;
+    padding-top: 100px;
+  }
+}
+.footerHeading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  font-family: "Merriweather";
+}
+.subHeading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Montserrat";
+  }
+}
+h5 {
+  font-weight: 700;
+}
+
+.button {
+  float: right;
+  a {
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    font-family: "Montserrat";
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .button {
+    float: none;
+  }
+}
