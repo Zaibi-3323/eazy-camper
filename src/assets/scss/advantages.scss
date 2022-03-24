@@ -38,6 +38,10 @@
   h3 {
     padding: 0px 30px 0px;
   }
+  .facilitiesHeading {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -59,11 +63,5 @@
   .advantagesCard {
     text-align: center;
     padding-top: 40px;
-  }
-}
-
-@media (max-width: 512px) {
-  .facilitiesHeading {
-    padding-top: 128px;
   }
 }
