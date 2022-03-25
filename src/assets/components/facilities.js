@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "../../assets/scss/cards.scss";
-import "../../assets/scss/facilities.scss";
-import image4 from "../../assets/images/image-4.png";
-import image5 from "../../assets/images/image-5.png";
-import image6 from "../../assets/images/image-5.png";
-import image7 from "../../assets/images/image-6.png";
+import "../style/cards.scss";
+import "../style/facilities.scss";
+import image4 from "../images/image-4.png";
+import image5 from "../images/image-5.png";
+import image6 from "../images/image-5.png";
+import image7 from "../images/image-6.png";
 
 function facilities() {
   return (

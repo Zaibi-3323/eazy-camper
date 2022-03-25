@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import "../../assets/scss/community.scss";
-import image8 from "../../assets/images/image-8.png";
-import image9 from "../../assets/images/image-9.png";
-import image10 from "../../assets/images/image-10.png";
-import start from "../../assets/images/start.png";
+import "../style/community.scss";
+import image8 from "../images/image-8.png";
+import image9 from "../images/image-9.png";
+import image10 from "../images/image-10.png";
+import start from "../images/start.png";
 
 function community() {
   return (
     <div className="Community">
       <div className="container">
         <div className=" row">
-          <div className="col-lg-3">
+          <div className="col-lg-2">
             <div className="communityContent">
-              <h2>Join the community campervan sites managers.</h2>
+              <h2>Join community campervan sites managers.</h2>
               <p>
                 Discover all the equibbed areas in Italy. Find the shop with all
                 the services for you and your camper.
@@ -23,7 +23,7 @@ function community() {
               </button>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 offset-lg-1">
+          <div className="col-lg-2 offset-lg-1 col-md-4">
             <div className="communityImage">
               <img src={image8} />
               <div className="imagesHeading">Lucciano</div>
@@ -31,7 +31,7 @@ function community() {
               <p className="siteColor">View the Site</p>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4 offset-lg-1">
+          <div className="col-lg-2 offset-lg-1 col-md-4 ">
             <div className="communityImage">
               <img src={image9} />
               <div className="imagesHeading">Lucciano</div>
@@ -39,7 +39,7 @@ function community() {
               <p className="siteColor">View the Site</p>
             </div>
           </div>
-          <div className="col-lg-2 col-md-4  offset-lg-1">
+          <div className="col-lg-2 offset-lg-1 col-md-4 ">
             <div className="communityImage">
               <img src={image10} />
               <div className="imagesHeading">Lucciano</div>

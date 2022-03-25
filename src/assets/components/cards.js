@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "../../assets/scss/cards.scss";
-import image1 from "../../assets/images/image-1.png";
-import image2 from "../../assets/images/image-2.png";
-import image3 from "../../assets/images/image-3.png";
+import "../style/cards.scss";
+import image1 from "../images/image-1.png";
+import image2 from "../images/image-2.png";
+import image3 from "../images/image-3.png";
 
 function Hero() {
   return (

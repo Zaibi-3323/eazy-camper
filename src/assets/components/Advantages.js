@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import "../../assets/scss/advantages.scss";
-import image11 from "../../assets/images/image-11.png";
-import image12 from "../../assets/images/image-12.png";
-import image13 from "../../assets/images/image-13.png";
+import "../style/advantages.scss";
+import image11 from "../images/image-11.png";
+import image12 from "../images/image-12.png";
+import image13 from "../images/image-13.png";
 
 function Advantages() {
   return (
     <div className="Promoting">
       <div className="container">
-        <div className="facilitiesHeading">Our Advantages</div>
+        <div className="advantagesHeading">Our Advantages</div>
         <div className="Advantages">
           <div className="row justify-content-center pt-5">
             <div className="col-lg-4 col-md-6">

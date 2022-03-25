@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "../../assets/scss/hero.scss";
-import headerImage from "../../assets/images/cube-1.png";
-import headerImage2 from "../../assets/images/headerImage.png";
-import explore from "../../assets/images/explore.png";
+import "../style/hero.scss";
+import headerImage from "../images/cube-1.png";
+import headerImage2 from "../images/headerImage.png";
+import explore from "../images/explore.png";
 
 function Hero() {
   return (
