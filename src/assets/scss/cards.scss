@@ -1,0 +1,44 @@
+.Promoting {
+  padding-top: 128px;
+  @media (max-width: 512px) {
+  }
+  @media (max-width: 427px) {
+  }
+  h5 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 39px;
+    margin-top: 84px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    padding-top: 30px;
+    opacity: 0.5;
+    font-family: "Montserrat", sans-serif;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
+    color: #f78065;
+    padding-top: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+.facilitiesHeading {
+  font-weight: 700;
+  margin-top: 150px;
+  font-size: 36px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  .software-compnie-card {
+    text-align: center;
+    padding-top: 40px;
+  }
+  h3 {
+    padding: 0px 30px 0px;
+  }
+}
