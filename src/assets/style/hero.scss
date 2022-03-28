@@ -1,9 +1,20 @@
 .heroSection {
   margin-bottom: 90px;
 }
+.positionRelative {
+  position: relative;
+}
+.headerImage {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 30px;
+}
 .bg_image {
-  background-image: url("../images/heroImg.png");
-  height: 100vh;
+  // background-image: url("../images/heroImg.png");
+  // height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,13 +29,12 @@
     padding: 96px 156px 30px 64px;
     position: absolute;
     bottom: -200px;
+    margin-left: 50px;
   }
   .headerImage2 {
     float: right;
   }
-  .headerImage {
-    margin-top: 40px;
-  }
+
   h2 {
     font-size: 39px;
     font-weight: 700;
@@ -57,7 +67,8 @@
 }
 @media (max-width: 992px) {
   .bg_image .heroContent {
-    max-width: 680px;
+    max-width: 540px;
+    padding: 30px;
   }
 }
 
@@ -66,19 +77,33 @@
     position: relative;
     padding: 40px 20px 40px 20px;
     text-align: center;
-    margin-top: 200px;
+    bottom: -40px;
+    margin-left: 0px;
+  }
+  .headerImage {
+    height: 42px;
+    padding-top: 20px;
+  }
+  .carousel-control-next-icon {
+    display: none;
+  }
+  .carousel-control-prev-icon {
+    display: none;
   }
 }
 @media (max-width: 512px) {
   .bg_image .heroContent {
-    min-height: 600px;
+    min-height: 510px;
   }
   .SoftwareCompnie {
-    padding-top: 100px;
+    padding-top: 0px;
+  }
+  .bg_image h2 {
+    font-size: 30px;
   }
 }
 @media (max-width: 427px) {
   .bg_image .heroContent {
-    min-height: 700px;
+    min-height: 510px;
   }
 }
