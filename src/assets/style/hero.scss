@@ -9,8 +9,14 @@
   z-index: 999;
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   padding-top: 30px;
+  align-items: center;
+  @media (max-width: 600px) {
+    width: 90%;
+    padding-top: 15px;
+    font-size: 30px;
+  }
 }
 .bg_image {
   // background-image: url("../images/heroImg.png");
@@ -80,10 +86,7 @@
     bottom: -40px;
     margin-left: 0px;
   }
-  .headerImage {
-    height: 42px;
-    padding-top: 20px;
-  }
+
   .carousel-control-next-icon {
     display: none;
   }

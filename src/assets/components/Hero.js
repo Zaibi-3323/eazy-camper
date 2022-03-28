@@ -10,8 +10,12 @@ function Hero() {
     <div>
       <div className="container positionRelative">
         <div className="headerImage">
-          <img className="img-fluid" src={headerImage} />
-          <img className="headerImage2 img-fluid" src={headerImage2} />
+          <div>
+            <img className="img-fluid" src={headerImage} />
+          </div>
+          <div>
+            <img className="headerImage2 img-fluid" src={headerImage2} />
+          </div>
         </div>
       </div>
       <Carousel>
