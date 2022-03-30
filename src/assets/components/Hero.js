@@ -5,7 +5,25 @@ import headerImage2 from "../images/headerImage.png";
 import explore from "../images/explore.png";
 import Carousel from "react-bootstrap/Carousel";
 import sliderImage from "../images/heroImg.png";
+import sliderImage2 from "../images/images.jpeg";
+import sliderImage3 from "../images/images2.jpeg";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+
+import "swiper/css/pagination";
+import { EffectFade, Navigation, Pagination } from "swiper";
+
+import Toggle from "./Toggle";
+import useDarkMode from "use-dark-mode";
+
 function Hero() {
+  const darkMode = useDarkMode(false);
   return (
     <div>
       <div className="container positionRelative">
@@ -13,22 +31,55 @@ function Hero() {
           <div>
             <img className="img-fluid" src={headerImage} />
           </div>
-          <div>
+          <div className="darkButton">
+            <div className="dark-mode-toggle">
+              <button type="button" onClick={darkMode.disable}>
+                ☀
+              </button>
+              <Toggle checked={darkMode.value} onChange={darkMode.toggle} />
+              <button type="button" onClick={darkMode.enable}>
+                ☾
+              </button>
+            </div>
+
             <img className="headerImage2 img-fluid" src={headerImage2} />
           </div>
         </div>
       </div>
-      <Carousel>
-        <Carousel.Item interval={1000}>
-          <img className="d-block w-100" src={sliderImage} alt="First slide" />
-        </Carousel.Item>
-        <Carousel.Item interval={500}>
-          <img className="d-block w-100" src={sliderImage} alt="Second slide" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={sliderImage} alt="Third slide" />
-        </Carousel.Item>
-      </Carousel>
+      <Swiper
+        // install Swiper modules
+
+        spaceBetween={30}
+        effect={"fade"}
+        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[EffectFade, Navigation, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img
+            className="d-block sliderimage w-100"
+            src={sliderImage}
+            alt="First slide"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="d-block sliderimage w-100"
+            src={sliderImage3}
+            alt="First slide"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="d-block sliderimage w-100"
+            src={sliderImage2}
+            alt="First slide"
+          />
+        </SwiperSlide>
+      </Swiper>
       <div className="heroSection">
         <div class="bg_image">
           <div className="container">

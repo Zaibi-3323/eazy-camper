@@ -39,3 +39,9 @@
     text-align: center;
   }
 }
+
+@media (max-width: 992px) {
+  .slick-slide img {
+    display: inherit;
+  }
+}

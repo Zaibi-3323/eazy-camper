@@ -15,7 +15,11 @@ function Advantages() {
               <div className="cards">
                 <div className="justify-content-center row">
                   <div className="advantagesCard">
-                    <img className="img-fluid" src={image11} alt="" />
+                    <img
+                      className="img-fluid whiteImage"
+                      src={image11}
+                      alt=""
+                    />
                     <h5>Digital marketing and editorial support</h5>
                     <p>
                       You don’t have to find out later or only after camenierk
@@ -30,7 +34,7 @@ function Advantages() {
             <div className="col-lg-4 col-md-6">
               <div className="justify-content-center row">
                 <div className="advantagesCard">
-                  <img className="img-fluid" src={image12} alt="" />
+                  <img className="img-fluid whiteImage" src={image12} alt="" />
                   <h5>Digital marketing and editorial support</h5>
                   <p>
                     You don’t have to find out later or only after camenierk and
@@ -44,7 +48,7 @@ function Advantages() {
             <div className="col-lg-4 col-md-6">
               <div className="justify-content-center row">
                 <div className="advantagesCard">
-                  <img className="img-fluid" src={image13} alt="" />
+                  <img className="img-fluid whiteImage" src={image13} alt="" />
                   <h5>Digital marketing and editorial support</h5>
                   <p>
                     You don’t have to find out later or only after camenierk and

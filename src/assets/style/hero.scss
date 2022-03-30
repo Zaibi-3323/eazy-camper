@@ -1,3 +1,8 @@
+.sliderimage {
+  min-height: 679px;
+  object-fit: cover;
+}
+
 .heroSection {
   margin-bottom: 90px;
 }
@@ -35,7 +40,8 @@
     padding: 96px 156px 30px 64px;
     position: absolute;
     bottom: -200px;
-    margin-left: 50px;
+    // margin-left: 50px;
+    z-index: 2;
   }
   .headerImage2 {
     float: right;
@@ -71,6 +77,13 @@
   margin-top: 29px;
   outline: none;
 }
+.darkButton {
+  display: flex;
+  align-items: center;
+}
+.dark-mode-toggle {
+  font-size: 30px;
+}
 @media (max-width: 992px) {
   .bg_image .heroContent {
     max-width: 540px;
@@ -92,6 +105,9 @@
   }
   .carousel-control-prev-icon {
     display: none;
+  }
+  .slick-slider {
+    overflow: hidden;
   }
 }
 @media (max-width: 512px) {
